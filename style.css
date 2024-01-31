@@ -1,0 +1,609 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.landing {
+  min-height: 100vh;
+  max-width: 100%;
+  background-image: url("./photos/bgimage.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+li,
+a {
+  font-weight: 400;
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  font-family: Roboto;
+  letter-spacing: 2px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 30px 10%; */
+  padding: 0px 10px;
+}
+
+.logo {
+  cursor: pointer;
+  width: 100px;
+  height: 100px;
+  padding-top: 12px;
+  padding-left: 5px;
+  /* transform: translateY(-23px); */
+}
+
+.nav_links {
+  list-style: none;
+  padding-top: 5%;
+  padding-right: 100px;
+}
+
+.nav_links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+
+.nav_links li:first-child a {
+  border-bottom: 3px #fc7900 solid;
+}
+
+.nav_links a:hover {
+  color: #0088a9;
+}
+
+.logo-main {
+  display: flex;
+}
+
+.logo-main h1 {
+  color: black;
+  padding-top: 9%;
+  padding-left: 5px;
+  font-family: Roboto;
+  font-size: 2.5em;
+}
+
+.logo-main h1 span {
+  color: #fc7900;
+}
+
+.title h1 {
+  animation-delay: 0.5s !important;
+  font-family: Roboto;
+  font-weight: 900;
+  font-style: normal;
+  color: white;
+  font-size: 6rem;
+  padding-top: 10%;
+  padding-left: 13%;
+}
+
+.title h2 {
+  animation-delay: 1.3s !important;
+  font-family: Roboto;
+  color: white;
+  font-size: 5.5rem;
+  padding-left: 16%;
+  padding-top: 1%;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+
+.aboutus-section h1 {
+  text-align: center;
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 4rem;
+}
+
+.aboutus-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0px;
+}
+
+.aboutus-main img {
+  width: 40%;
+  height: 45%;
+}
+
+.aboutus-main .why-us {
+  font-family: Yanone Kaffeesatz;
+  font-size: 2rem;
+  /* border: 3px solid #fc7900;*/
+  width: 40%;
+  max-height: auto;
+  word-wrap: break-word;
+  line-height: 140%;
+  font-weight: 500;
+  padding: 10px;
+}
+
+.hb-border-top-br3 {
+  position: relative;
+  transition-duration: 0.3s;
+  overflow: visible;
+  box-sizing: border-box;
+  border: none;
+  padding: 10px 22px;
+}
+
+.hb-border-top-br3::after {
+  box-sizing: border-box;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  content: "";
+  border: 3px solid #fc7900;
+  z-index: 2;
+  margin: 0px;
+  top: 0px;
+  right: 0px;
+  border-bottom-width: 3px;
+  transition: border-bottom-width 0.1s ease 0.2s, height 0.2s ease 0.1s,
+    width 0.2s ease 0s, margin 0.2s ease 0s;
+}
+
+.hb-border-top-br3:hover::after {
+  width: 60%;
+  height: 0px;
+  border-width: 4px 2px 0px;
+  border-color: #6b3eb3;
+  margin: 0px 20%;
+  transition: border-bottom-width 0.1s ease 0s, height 0.2s ease 0.1s,
+    width 0.2s ease 0.2s, margin 0.2s ease 0.2s;
+}
+
+.title-two {
+  justify-content: space-around;
+  padding-top: 1%;
+}
+
+#uptime {
+  width: 30%;
+  height: 40%;
+  position: relative;
+  right: 90px;
+}
+
+.number-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 4%;
+}
+
+.circle {
+  font-family: Roboto;
+  color: #4e47bb;
+  display: block;
+  width: 100%;
+  height: 90px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.number-stat {
+  font-size: 4rem;
+}
+
+.text-info {
+  font-size: 1.6rem;
+  color: black;
+  word-wrap: none;
+}
+
+.pricing-section {
+  padding-top: 20%;
+  background-image: url("./photos/bg-2.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 12vh;
+}
+
+.pricing-section > h1 {
+  text-align: center;
+  font-family: Roboto;
+  font-weight: 900;
+  font-size: 4rem;
+  color: white;
+}
+
+.pricing-main {
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 50px;
+}
+.card {
+  height: auto;
+  width: 25%;
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.card h1 {
+  text-align: center;
+}
+
+.text {
+  background-color: #f1f1f1;
+  color: #0777e2;
+  font-family: Roboto;
+  padding: 20px;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.description {
+  word-wrap: break-word;
+  text-align: center;
+  padding: 10px 25px;
+  font-family: Roboto;
+  font-weight: 900;
+}
+
+.price {
+  font-family: Roboto;
+  text-align: center;
+}
+
+.price-text {
+  color: #7f7f7f;
+  font-size: 1.2rem;
+}
+
+.main-price {
+  margin-top: 10px;
+  color: #fc7900;
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+.features {
+  padding-top: 25px;
+  padding-left: 22%;
+}
+
+.feature-item {
+  display: flex;
+  justify-content: flex-start;
+  font-size: 1.3rem;
+  align-items: center;
+  padding-top: 7px;
+}
+
+.feature-item p {
+  font-family: Roboto;
+  font-weight: 900;
+  padding-left: 5px;
+}
+
+.tick {
+  color: #0088a9;
+}
+
+.buy {
+  text-align: center;
+  padding-top: 25px;
+}
+
+.buy button {
+  border: 2px solid #0171ee;
+  background: none;
+  font-family: Roboto;
+  font-size: 1.5rem;
+  padding: 10px 50px;
+  color: #0171ee;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 450ms;
+}
+
+.secnd-btn {
+  padding-top: 55px !important;
+}
+
+.third-btn {
+  padding-top: 55px !important;
+}
+
+.buy button:hover {
+  background-color: #0171ee;
+  color: white;
+}
+
+.contact-title {
+  font-family: Roboto;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.contact-main {
+  display: block;
+  text-align: center;
+  font-family: Roboto;
+  margin-top: 40px;
+}
+
+form {
+  display: inline-block;
+  margin: 0px auto;
+  text-align: left;
+}
+
+.contact-item {
+  padding: 10px 0px;
+}
+
+.contact-item label {
+  font-size: 1.5rem;
+}
+
+.contact-item input {
+  padding: 5px;
+  border: none;
+  background-color: #f2f2f2;
+  width: 500px;
+  height: 50px;
+  font-size: 1.5rem;
+}
+
+textarea {
+  border: none;
+  background-color: #f2f2f2;
+  font-size: 1.5rem;
+}
+
+.btn-submit {
+  text-align: center;
+  padding: 5px 0px;
+}
+
+.btn-submit button {
+  padding: 10px 50px;
+  cursor: pointer;
+  font-family: Roboto;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: white;
+  background: linear-gradient(to right, #4d97de, #54ba55);
+  border: none;
+}
+
+footer {
+  background: #3c3d41;
+  margin-top: 40px;
+}
+
+.footer-icons {
+  display: flex;
+  justify-content: center;
+  padding: 10px 0px;
+}
+
+.footer-icons i {
+  color: #54ba55;
+  font-size: 2.2rem;
+  padding: 0px 5px;
+  cursor: pointer;
+}
+
+.footer-info {
+  display: flex;
+  color: white;
+  font-family: Roboto;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+.footer-info p {
+  padding: 0px 10px;
+  font-size: 1.7rem;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+
+.footer-info p:hover {
+  font-size: 2.5rem;
+}
+
+.my-info {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.my-info a {
+  font-size: 1.2rem;
+  text-decoration: underline;
+}
+
+/*! Media Queries ---------------------------------*/
+/*! --------------------------------------------*/
+/*! ----------- ---------------------------------*/
+/*! ----------- ---------------------------------*/
+/*! ----------- ---------------------------------*/
+/*! ----------- ---------------------------------*/
+/*! ----------- ---------------------------------*/
+
+@media only screen and (min-device-width: 761px) and (max-device-width: 1427px) {
+  .pricing-section > h1 {
+    font-size: 2.3rem;
+    padding-top: 115px;
+  }
+
+  .text {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1361px) {
+  .title h1 {
+    padding-left: 10%;
+  }
+  .title h2 {
+    padding-left: 13%;
+  }
+}
+
+@media only screen and (max-width: 1330px) {
+  .landing {
+    min-height: 700px;
+    background-size: contain;
+  }
+}
+
+@media only screen and (max-width: 1276px) {
+  .title h1 {
+    font-size: 4rem;
+    padding-top: 7%;
+    padding-left: 8%;
+  }
+  .title h2 {
+    font-size: 3.5rem;
+    padding-left: 11%;
+    padding-top: 0%;
+  }
+}
+
+@media only screen and (max-width: 1175px) {
+  li,
+  a {
+    font-size: 26px;
+    letter-spacing: 2px;
+  }
+
+  .nav_links {
+    padding-top: 7%;
+    padding-right: 25px;
+  }
+  .nav_links li {
+    padding: 0px 10px;
+  }
+
+  .aboutus-section {
+    margin-top: -120px;
+  }
+}
+
+@media only screen and (max-device-width: 813px) {
+  .aboutus-main .why-us {
+    height: auto;
+    width: 50%;
+    font-size: 1.8rem;
+  }
+
+  #p-2 {
+    height: auto;
+    width: 50%;
+    font-size: 1.5rem;
+  }
+
+  #uptime {
+    right: 50px;
+  }
+}
+
+@media only screen and (max-device-width: 813px) and (max-device-height: 376px) {
+  .number-stat {
+    font-size: 2.5rem;
+  }
+
+  .text-info {
+    font-size: 1.6rem;
+  }
+}
+
+@media only screen and (max-device-width: 760px) {
+  .number-stat {
+    font-size: 3rem;
+  }
+
+  .text-info {
+    font-size: 1.4rem;
+    color: black;
+    word-wrap: none;
+  }
+
+  .description {
+    font-size: 0.8rem;
+  }
+
+  .main-price {
+    font-size: 1.5rem;
+  }
+
+  .feature-item {
+    font-size: 1rem;
+  }
+
+  .secnd-btn {
+    padding-top: 50px !important;
+  }
+
+  .third-btn {
+    padding-top: 50px !important;
+  }
+
+  .pricing-section > h1 {
+    font-size: 3rem;
+    padding-top: 80px;
+  }
+}
+
+@media only screen and (max-device-width: 478px) {
+  .aboutus-main .why-us {
+    height: auto;
+    width: 50%;
+    font-size: 1.8rem;
+  }
+
+  #p-2 {
+    height: auto;
+    width: 50%;
+    font-size: 1.5rem;
+  }
+
+  #uptime {
+    right: 20px;
+  }
+
+  .description {
+    display: none;
+  }
+
+  .main-price {
+    font-size: 1.5rem;
+  }
+
+  .feature-item {
+    font-size: 1rem;
+  }
+
+  .secnd-btn {
+    padding-top: 50px !important;
+  }
+
+  .third-btn {
+    padding-top: 50px !important;
+  }
+
+  .pricing-section > h1 {
+    font-size: 3.5rem;
+    padding-top: 55px;
+  }
+}

@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/2.0.0/countUp.min.js"
+      integrity="sha512-E0zfDwA1CopT4gzJmj9tMpd7O6pTpuybTK58eY1GwqptdasUohyImuualLt/S5XvM8CDnbaTNP/7MU3bQ5NmQg=="
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <meta charset="UTF-8" />
+    <title>Web Hosting</title>
+  </head>
+
+  <body>
+    <!--! The landing page-->
+    <section class="landing" id="lol landing-page">
+      <!-- Header part -->
+      <header>
+        <div class="logo-main">
+          <img src="./photos/logo.png" alt="Logo" class="logo" />
+          <h1>benos<span>press</span></h1>
+        </div>
+        <nav>
+          <ul class="nav_links">
+            <li><a href="#landing-page">Home</a></li>
+            <li><a href="#about-section">Why Us</a></li>
+            <li><a href="#pricing-page">Pricing</a></li>
+            <li><a href="#contact-form">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Title Part-->
+      <div class="title">
+        <h1 class="animate__animated animate__fadeInLeft animate__delay-0.5s">
+          Web Hosting
+        </h1>
+        <h2 class="animate__animated animate__fadeInLeft animate__delay-1s">
+          Affordable plans
+        </h2>
+      </div>
+    </section>
+
+    <!--! The about us section  -->
+    <section class="aboutus-section" id="about-section">
+      <h1>Why Us</h1>
+      <div class="aboutus-main">
+        <img
+          src="./photos/undraw_server_status_5pbv.png"
+          alt="Server"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="750"
+        />
+        <div
+          class="why-us hb-border-top-br3"
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="800"
+        >
+          <p>
+            Our hosting services has been delivering top speeds for more than 8
+            years. Our team has the most professional web technicians in the
+            industry and our reputation prove that. The support team at
+            benospress are available 24/7 to make sure our costumers' issues are
+            fixed asap.
+          </p>
+        </div>
+      </div>
+      <br />
+      <div class="aboutus-main title-two">
+        <div
+          id="p-2"
+          class="why-us hb-border-top-br3"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="800"
+        >
+          <p>
+            If your site is down, your visitors can’t purchase from you or read
+            your new blog post. Our 24/7/365 support staff with expert system
+            admins keep your server running at its peak. We use industry best
+            practices, the best data centers and ensure your server has the
+            latest security patches. That's why we can commit to your site being
+            up over <span style="color: rgb(5, 152, 219)">99.9%</span> of the
+            time.
+          </p>
+        </div>
+        <img
+          id="uptime"
+          src="./photos/99uptime.png"
+          alt="uptime"
+          data-aos="fade-left"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+          data-aos-duration="750"
+        />
+      </div>
+      <br /><br />
+      <!--! Numbers counter section  -->
+
+      <div class="number-section" id="number-section" data-aos="zoom-in">
+        <div class="costumers circle">
+          <p class="number-stat" id="clients"></p>
+          <p class="text-info">Happy clients</p>
+        </div>
+
+        <div class="years-xp circle">
+          <p class="number-stat" id="xp"></p>
+          <p class="text-info">Years of Experience</p>
+        </div>
+
+        <div class="experts circle">
+          <p class="number-stat" id="experts"></p>
+          <p class="text-info">Technical experts</p>
+        </div>
+
+        <div class="vps-now circle">
+          <p class="number-stat" id="vps"></p>
+          <p class="text-info">Running VPS</p>
+        </div>
+      </div>
+    </section>
+    <br />
+    <!--! Pricing Section-->
+    <section class="pricing-section" id="pricing-page">
+      <h1>Pricing</h1>
+      <div
+        class="pricing-main"
+        data-aos="fade"
+        data-aos-offset="300"
+        data-aos-easing="ease-in-sine"
+        data-aos-duration="800"
+      >
+        <div class="shared-plan card">
+          <div class="text">
+            <h1>Shared</h1>
+          </div>
+          <div class="card-main">
+            <div class="description">
+              <p>
+                Our shared hosting plan is designed to be beginner friendly and
+                is ideal for users who are launching a new website or running
+                several simple websites.
+              </p>
+            </div>
+            <div class="price">
+              <p class="price-text">Starting at</p>
+              <p class="main-price">$9.99/mo</p>
+            </div>
+
+            <div class="features">
+              <div class="feature-item">
+                <i class="fas fa-check-circle tick"></i>
+                <p>10 Websites</p>
+              </div>
+
+              <div class="feature-item">
+                <i class="fas fa-check-circle tick"></i>
+                <p>Unlimited SSD Storage</p>
+              </div>
+
+              <div class="feature-item">
+                <i class="fas fa-check-circle tick"></i>
+                <p>Unmetered Bandwidth</p>
+              </div>
+
+              <div class="feature-item">
+                <i class="fas fa-check-circle tick"></i>
+                <p>Free SSL Certificate</p>
+              </div>
+
+              <div class="feature-item">
+                <i class="fas fa-check-circle tick"></i>
+                <p>50 Domains</p>
+              </div>
+
+              <div class="feature-item">
+                <i class="fas fa-check-circle tick"></i>
+                <p>Unlimted Subdomains</p>
+              </div>
+
+              <div class="feature-item">
+                <i class="fas fa-check-circle tick"></i>
+                <p>High Performance</p>
+              </div>
+            </div>
+            <div class="buy">
+              <button>Select Plan</button>
+            </div>
+            <br />
+          </div>
+        </div>
+
+        <div class="vps-plan card">
+          <div class="text">
+            <h1>VPS</h1>
+          </div>
+          <div class="card-main">
+            <div class="description">
+              <p>
+                Your own set amount of RAM, CPU, and Disk Space you've chosen.
+                This allows for greater stability and performance of your
+                website. In addition, to your own operating system.
+              </p>
+            </div>
+            <div class="price">
+              <p class="price-text">Starting at</p>
+              <p class="main-price">$19.99/mo</p>
+            </div>
+
+            <div class="features">
+              <div class="feature-item">
+                <i class="fas fa-check-circle tick"></i>
+                <p>2 Cores</p>
+              </div>
+
+              <div class="feature-item">
+                <i class="fas fa-check-circle tick"></i>
+                <p>60 GB SSD Storage</p>
+              </div>
+
+              <div class="feature-item">
+                <i class="fas fa-check-circle tick"></i>
+                <p>1 TB Bandwidth</p>
+              </div>
+
+              <div class="feature-item">
+                <i class="fas fa-check-circle tick"></i>
+                <p>1 IP Address</p>
+              </div>
+
+              <div class="feature-item">
+                <i class="fas fa-check-circle tick"></i>
+                <p>High Performance</p>
+              </div>
+
+              <div class="feature-item">
+                <i class="fas fa-check-circle tick"></i>
+                <p>Full Root Access</p>
+              </div>
+            </div>
+
+            <div class="buy secnd-btn">
+              <button>Select Plan</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="dedicated-plan card">
+          <div class="text">
+            <h1>Dedicated</h1>
+          </div>
+          <div class="card-main">
+            <div class="description">
+              <p>
+                Complete control over everything on your very own server.
+                Highest level of stability, privacy, and control. Best suitable
+                for extremely high traffic complex websites
+              </p>
+            </div>
+            <div class="price">
+              <p class="price-text">Starting at</p>
+              <p class="main-price">$49.99/mo</p>
+            </div>
+
+            <div class="features">
+              <div class="feature-item">
+                <i class="fas fa-check-circle tick"></i>
+                <p>4 cores @ 2.3 GHz</p>
+              </div>
+
+              <div class="feature-item">
+                <i class="fas fa-check-circle tick"></i>
+                <p>Intel Xeon-D</p>
+              </div>
+
+              <div class="feature-item">
+                <i class="fas fa-check-circle tick"></i>
+                <p>500 GB Storage</p>
+              </div>
+
+              <div class="feature-item">
+                <i class="fas fa-check-circle tick"></i>
+                <p>4 GB RAM</p>
+              </div>
+
+              <div class="feature-item">
+                <i class="fas fa-check-circle tick"></i>
+                <p>3 TB Bandwidth</p>
+              </div>
+
+              <div class="feature-item">
+                <i class="fas fa-check-circle tick"></i>
+                <p>2 IP Adresses</p>
+              </div>
+            </div>
+            <div class="buy third-btn">
+              <button>Select Plan</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br /><br /><br />
+    </section>
+    <br />
+    <section
+      class="contact-form"
+      id="contact-form"
+      data-aos="fade"
+      data-aos-offset="300"
+      data-aos-easing="ease-in-sine"
+      data-aos-duration="600"
+    >
+      <h1 class="contact-title">Contact Us</h1>
+      <div class="contact-main">
+        <form>
+          <div class="contact-item">
+            <label for="name">Name</label><br />
+            <input
+              type="text"
+              name="name"
+              id="name"
+              placeholder="Enter Full Name"
+            />
+          </div>
+
+          <div class="contact-item">
+            <label for="email">Email</label><br />
+            <input
+              type="text"
+              name="email"
+              id="email"
+              placeholder="Enter Email"
+            />
+          </div>
+
+          <div class="contact-item">
+            <label for="message">Message</label><br />
+            <textarea
+              name="message"
+              id="message"
+              cols="44"
+              rows="10"
+              placeholder="Your message here..."
+            ></textarea>
+          </div>
+          <div class="btn-submit">
+            <button>Submit</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-main">
+        <div class="footer-icons">
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-instagram-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-pinterest-square"></i>
+        </div>
+        <div class="footer-info">
+          <p>Home</p>
+          <p>Why Us</p>
+          <p>Pricing</p>
+          <p>Contact</p>
+        </div>
+      </div>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/countup.js/1.9.3/countUp.min.js"
+      integrity="sha512-fojFLrCKRmoGiEXroMMaF88NlzkQLbBGIQ0LwgmxDM6vGSh6fnm04ClpwheRDrLnY+gi/1CfOWV5+YqcPSSh7A=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
